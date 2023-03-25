@@ -1,0 +1,69 @@
+#page1{
+	background-color: darkgray;
+	text-align: center;
+	display: inline-block ;
+	position: relative;
+	width: 45%;
+	border-left: 61px solid darkgray;
+}
+#page2{
+	background-color: darkgray;
+	text-align: center;
+	display: inline-block ;
+	position: relative ;
+	width: 45%;
+	float: right;
+	border-left: 2px solid black;
+	border-right: 60px solid darkgray;
+}
+h1{
+	height: 100px;
+	color: black;
+	text-align: center;
+	margin: 30px;
+	font-style: italic;
+	font-size: xx-large;
+	font-weight: bold;
+}
+body{
+	height: 100%;
+	background: linear-gradient(to bottom, white, darkgray);
+	color: black;
+}
+.titre{
+	margin-top: 40px;
+	font-style: italic;
+	font-size: x-large;
+	font-weight: bold;
+}
+.red{
+	color: red;
+}
+.vert{
+	color: green;
+}
+.violet{
+	color: purple;
+}
+
+
+
+.l1
+{
+	margin-left: 20px;
+}
+
+.l2
+{
+	margin-left: 40px;
+
+}
+
+.l3
+{
+	margin-left: 60px;
+
+}
+p{
+	height: 5px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" href = "page2.css"  />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quelque programme en Javascripts</title>
+
+	<script type="text/javascript">
+		function ma(liste) {
+			var m = liste[0]
+			for (var k in liste) {
+				if (k >m ) {
+					m=k;
+				}
+			}
+			alert("le maximun est "+m);
+		}
+
+		function somme_N_entiers (nb){
+			var somme=0;
+			for (var i=0; i <=nb ; i+=1){
+				somme=somme + i ;
+			}
+			alert("La somme des chiffre/nombre jusqu'a "+nb+" est "+somme);
+		}
+	</script>
+</head>
+<header >
+	<div id=page1> <a href="index.html" style="color:white;">L'HISTOIRE DE L'INFORMATIQUE</a></div> 
+	<div id=page2> <a href="page2.html" style="color:white;"> QUELQUE PROGRAMME</a></div>
+	<h1>Quelque programme en Javascripts</h1> 
+</header>
+<body>
+	<p class="titre">1) Calculer le maximun</p>
+		<p style="height: auto;"> En python il exsiste une fonction qui permet de calculer le maximun d'une chaine de charactere, d'une liste,d'un tuple etc. Cette fonction est: max() avec la variable entre parenthese.Mais en javascript cette fonction exsiste pas.Nous allons donc la codé pour pourvoir avoir le maximun d'une chaine de charactere et de plusieur chiffre</p>
+			<p >function ma(liste) { </p>
+				<p class="l1">for (var k in liste) {</p>
+					<p class="l2">if (k>m) {</p>
+						<p class="l3">m=k;</p>
+					<p class="l2">}</p>
+				<p class="l1">}</p>
+				<p class="l1">alert("le maximun est "+m);</p>
+			<p>}</p>
+	        <p><strong>Entrer des nombres ou une chaine de caractere :</strong>
+	        <input type = "text"  name = "liste" onchange="ma(value)" />
+	        <input type = "button" value ="executer" Name = "Bouton1" onClick="ma(liste)" /> </p>
+
+		<p class="titre">1) Calculer le somme des chiffre/nombre jusqu'a n</p>
+		<p style="height: auto;">En javascript la fonction for() qui s'écrit <strong>for ([initialisation]; [condition]; [expression_finale])</strong>Elle prend donc trois parametre s'éparer par des point virgule et qui son tous facultatif(sans aucune condition la boucle devient infini). </p>
+			<p>function somme_N_entiers (nb){</p>
+				<p class="l1">var somme=0;</p>
+				<p class="l1">for (var i=0; i <=nb ; i+=1){</p>
+					<p class="l2">somme=somme + i ;</p>
+				<p class="l1">}</p>
+				<p class="l1">alert("La somme des chiffre/nombre jusqu'a "+nb+" est "+somme);</p>
+			<p>}</p>
+		<p><strong>Entrer un nombres :</strong>
+		<input type="text" name="nbre" onchange="somme_N_entiers (value)"/>
+		<input type = "button" value ="calculer" name = "Bouton2" onClick="somme_N_entiers (nbre)"/> </p>
+
+</body>
+
+</html>
